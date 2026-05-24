@@ -11,6 +11,7 @@ public int reverse(int x) {
         if (((long) result) * 10 < Integer.MIN_VALUE) {
             return 0;
         }
+
         result *= 10;
         result += x % 10;
         x /= 10;
@@ -18,4 +19,3 @@ public int reverse(int x) {
 
     return result;
 }
-

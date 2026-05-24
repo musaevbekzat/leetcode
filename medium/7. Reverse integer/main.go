@@ -8,9 +8,6 @@ import (
 func reverse(x int) int {
 	result := 0
 	for x != 0 {
-		pop := x % 10
-		x /= 10
-
 		if int64(result)*10 > math.MaxInt32 {
 			return 0
 		}
@@ -18,6 +15,8 @@ func reverse(x int) int {
 			return 0
 		}
 
+		pop := x % 10
+		x /= 10
 		result = result*10 + pop
 	}
 	return result
