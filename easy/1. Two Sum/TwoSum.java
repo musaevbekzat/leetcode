@@ -10,5 +10,5 @@ public int[] twoSum(int[] nums, int target) {
         }
         map.put(nums[i], i);
     }
-    return null;
+    return new int[]{};
 }
